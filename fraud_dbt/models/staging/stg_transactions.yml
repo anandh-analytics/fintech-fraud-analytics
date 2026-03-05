@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    description: "Clean staging model for fraud transactions"
+
+    columns:
+
+      - name: transaction_id
+        description: "Unique transaction identifier"
+        tests:
+          - unique
+          - not_null
+
+      - name: transaction_amt
+        description: "Transaction amount"
+        tests:
+          - not_null
+
+      - name: is_fraud
+        description: "Fraud flag"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0,1]
+
+      - name: device_type
+        description: "Device type used for transaction"
