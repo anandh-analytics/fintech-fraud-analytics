@@ -204,7 +204,7 @@ fintech-fraud-analytics
 
 ### 1 Clone Repository
 
-git clone https://github.com/YOUR_USERNAME/fintech-fraud-analytics.git
+git clone https://github.com/anandh-analytics/fintech-fraud-analytics.git
 
 ---
 
